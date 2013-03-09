@@ -11,6 +11,7 @@ include shiftit
 ## Required Puppet Modules
 
 * `boxen`
+* `XQuartz` (boxen/puppet-xquartz)
 
 ## Development
 
