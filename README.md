@@ -1,5 +1,7 @@
 # ShiftIt Puppet Module for Boxen
 
+[![Build Status](https://travis-ci.org/boxen/puppet-shiftit.png)](https://travis-ci.org/boxen/puppet-shiftit)
+
 Install [ShiftIt](https://github.com/fikovnik/ShiftIt/), for managing window size and position in OSX.
 
 ## Usage
