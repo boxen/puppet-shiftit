@@ -3,12 +3,18 @@
 # Examples
 #
 #   include shiftit
-class shiftit {
+#
+#   class { 'shiftit':
+#     version => '1.6.3'
+#   }
+class shiftit(
+    $version = '1.6.3'
+) {
 
     include xquartz
 
     package { 'ShiftIt':
         provider => 'compressed_app',
-        source   => 'https://github.com/downloads/fikovnik/ShiftIt/ShiftIt-develop-1.6.zip'
+        source   => "https://github.com/fikovnik/ShiftIt/releases/download/version-${version}/ShiftIt-${version}.zip"
     }
 }
